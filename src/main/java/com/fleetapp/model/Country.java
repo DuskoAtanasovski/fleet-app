@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Country {
-	
+
 	@Id
 	@GeneratedValue
 	private Integer id;
@@ -29,8 +29,8 @@ public class Country {
 	private String description;
 	private String nationality;
 	private String continent;
-	
-//	@OneToMany(mappedBy = "country")
-//	private List<State> states;
+
+	@OneToMany(mappedBy = "country")
+	private List<State> states;
 
 }
