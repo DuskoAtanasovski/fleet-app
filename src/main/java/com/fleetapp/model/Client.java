@@ -25,6 +25,7 @@ public class Client {
 	@GeneratedValue
 	@Column(name = "id")
 	private int id;
+	
 	private String name;
 	private String address;
 	private String city;
