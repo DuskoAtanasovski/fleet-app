@@ -3,6 +3,7 @@ package com.fleetapp.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -22,10 +23,10 @@ import lombok.NoArgsConstructor;
 public class Client {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
 	private int id;
-	
+
 	private String name;
 	private String address;
 	private String city;
@@ -36,9 +37,13 @@ public class Client {
 
 	@ManyToOne
 	@JoinColumn(name = "countryid", insertable = false, updatable = false)
+	private Country country;
+	private Integer countryid;
+
+	@ManyToOne
+	@JoinColumn(name = "stateid", insertable = false, updatable = false)
 	private State state;
 	private Integer stateid;
 
 	private String details;
-
 }

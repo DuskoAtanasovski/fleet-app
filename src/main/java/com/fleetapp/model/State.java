@@ -31,8 +31,8 @@ public class State {
 	@ManyToOne
 	@JoinColumn(name = "countryid", insertable = false, updatable = false)
 	private Country country;
-
-	private Integer countryId;
+	
+	private Integer countryid;
 
 	private String details;
 
