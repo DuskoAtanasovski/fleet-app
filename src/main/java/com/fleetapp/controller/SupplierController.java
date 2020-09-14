@@ -8,6 +8,6 @@ public class SupplierController {
 
 	@GetMapping("/suppliers")
 	public String getSuppliers() {
-		return "supplier";
+		return "Supplier";
 	}
 }

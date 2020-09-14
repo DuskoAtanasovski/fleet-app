@@ -8,6 +8,6 @@ public class VehicleMaintenanceController {
 
 	@GetMapping("/vehicleMaintenances")
 	public String getVehicleMaintenances() {
-		return "vehicleMaintenance";
+		return "VehicleMaintenance";
 	}
 }

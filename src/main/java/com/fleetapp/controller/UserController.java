@@ -8,6 +8,6 @@ public class UserController {
 
 	@GetMapping("/users")
 	public String getUsers() {
-		return "user";
+		return "User";
 	}
 }

@@ -8,7 +8,7 @@ public class InvoiceController {
 	
 	@GetMapping("/invoices")
 	public String getInvoices() {
-		return "invoice";
+		return "Invoice";
 	}
 	
 	

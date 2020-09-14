@@ -9,6 +9,6 @@ public class EmployeeController {
 
 	@GetMapping("/employees")
 	public String getEmployees() {
-		return "employee";
+		return "Employee";
 	}
 }

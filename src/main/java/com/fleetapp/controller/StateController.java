@@ -8,6 +8,6 @@ public class StateController {
 
 	@GetMapping("/states")
 	public String getStates() {
-		return "state";
+		return "State";
 	}
 }

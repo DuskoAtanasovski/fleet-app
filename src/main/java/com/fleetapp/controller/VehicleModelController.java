@@ -8,7 +8,7 @@ public class VehicleModelController {
 	
 	@GetMapping("/vehicleModels")
 	public String getVehicleModels() {
-		return "vehicleModel";
+		return "VehicleModel";
 	}
 
 }

@@ -8,6 +8,6 @@ public class VehicleController {
 
 	@GetMapping("/vehicles")
 	public String getVehicles() {
-		return "vehicle";
+		return "Vehicle";
 	}
 }

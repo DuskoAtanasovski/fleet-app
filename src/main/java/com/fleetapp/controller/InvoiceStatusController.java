@@ -8,7 +8,7 @@ public class InvoiceStatusController {
 	
 	@GetMapping("/inoviceStatuses")
 	public String getInvoiceStatuses() {
-		return "invoiceStatus";
+		return "InvoiceStatus";
 	}
 
 }

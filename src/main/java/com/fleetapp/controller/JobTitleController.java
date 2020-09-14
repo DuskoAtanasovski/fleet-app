@@ -8,6 +8,6 @@ public class JobTitleController {
 
 	@GetMapping("/jobTitles")
 	public String getJobTitles() {
-		return "jobTitle";
+		return "JobTitle";
 	}
 }

@@ -8,7 +8,7 @@ public class CountryController {
 
 	@GetMapping("/countries")
 	public String getCountries() {
-		return "country";
+		return "Country";
 	}
 	
 	

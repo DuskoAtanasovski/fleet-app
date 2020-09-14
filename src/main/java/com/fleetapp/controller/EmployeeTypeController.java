@@ -8,6 +8,6 @@ public class EmployeeTypeController {
 
 	@GetMapping("/employeeTypes")
 	public String getEmployeeTypes() {
-		return "employeeType";
+		return "EmployeeType";
 	}
 }

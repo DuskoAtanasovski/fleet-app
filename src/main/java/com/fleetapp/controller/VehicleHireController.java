@@ -8,7 +8,7 @@ public class VehicleHireController {
 	
 	@GetMapping("/vehicleHires")
 	public String getVehicleHires() {
-		return "vehicleHire";
+		return "VehicleHire";
 	
 	}
 }

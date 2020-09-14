@@ -8,6 +8,6 @@ public class LocationController {
 
 	@GetMapping("/locations")
 	public String getLocations() {
-		return "location";
+		return "Location";
 	}
 }

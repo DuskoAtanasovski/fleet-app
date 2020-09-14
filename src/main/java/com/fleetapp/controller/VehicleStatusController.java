@@ -8,7 +8,7 @@ public class VehicleStatusController {
 	
 	@GetMapping("/vehicleStatuses")
 	public String getVehicleStatuses() {
-		return "vehicleStatus";
+		return "VehicleStatus";
 	}
 
 }
