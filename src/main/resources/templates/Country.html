@@ -408,11 +408,11 @@
 		   <table class="table">
                 <thead>
                   <tr>
-                    <th>Id</th>
-                    <th>Description</th>
-                    <th>Capital</th>
-                    <th>Code</th>
-                    <th>Actions</th>
+                 <th><i class="icon_table"></i>id</th>
+                    <th><i class="icon_table"></i>Description</th>
+                    <th><i class="icon_table"></i>Capital</th>
+                    <th><i class="icon_table"></i>Code</th>
+                    <th><i class="icon_cogs"></i>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -423,8 +423,9 @@
                     <td th:text="${country.code}"></td>
                     <td>
                     <div class="btn-group">
-                    <a th:href="@{/countries/findById/(id=${country.id})}" class="btn btn-primary" id="editButton">Edit</a>
-                    <a th:href="@{/countries/delete/(id=${country.id})}" class="btn btn-danger " id="deleteButton">Delete</a>
+<a th:href="@{/countries/findById/(id=${country.id})}" class="btn btn-primary" id="editButton"><i class="icon_pencil-edit"></i></a>
+<a class="btn btn-success" id="detailsButton"><i class="icon_document_alt"></i></a>
+<a th:href="@{/countries/delete/(id=${country.id})}" class="btn btn-danger " id="deleteButton"><i class="icon_close_alt2"></i></a>
                     </div>
                     </td>
                   </tr>
