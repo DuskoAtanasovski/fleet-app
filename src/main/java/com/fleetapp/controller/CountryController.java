@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fleetapp.model.Country;
@@ -32,11 +33,16 @@ public class CountryController {
 		countryService.save(country);
 		return "redirect:/countries";
 	}
-	
+
 	@RequestMapping("countries/findById")
 	@ResponseBody
 	public Optional<Country> findById(int id) {
 		return countryService.findById(id);
 	}
 
+	@RequestMapping(value = "/countries/update", method = { RequestMethod.PUT, RequestMethod.GET })
+	public String update(Country country) {
+		countryService.save(country);
+		return "redirect:/countries";
+	}
 }
