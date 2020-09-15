@@ -11,24 +11,29 @@ import com.fleetapp.repository.CountryRepository;
 
 @Service
 public class CountryService {
-	
+
 	@Autowired
 	private CountryRepository countryRepository;
-	
-	
+
 	// List of countries
-	public List<Country> getCountries(){
+	public List<Country> getCountries() {
 		return countryRepository.findAll();
 	}
-	
+
 	// Save new country
 	public void save(Country country) {
 		countryRepository.save(country);
 	}
-	
+
 	// Get country by id
 	public Optional<Country> findById(int id) {
 		return countryRepository.findById(id);
+	}
+	
+	// Delete country
+	public void delete(Integer id) {
+		countryRepository.deleteById(id);
+
 	}
 
 }
