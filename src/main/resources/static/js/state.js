@@ -23,6 +23,8 @@ $('document').ready(function() {
 			$('#idDetails').val(state.id);
 			$('#ddlCountryDetails').val(state.countryid);
 			$('#nameDetails').val(state.name);
+			$('#codeDetails').val(state.code);
+			$('#capitalDetails').val(state.capital);
 			$('#detailsDetails').val(state.details);
 			$('#lastModifiedByDetails').val(state.lastModifiedBy);
 
