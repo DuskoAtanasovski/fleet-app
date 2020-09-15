@@ -1,6 +1,6 @@
-$('document').ready(function(){
-	
-	$('.table #editButton').on('click', function(event){
+$('document').ready(function() {
+
+	$('.table #editButton').on('click', function(event) {
 		event.preventDefault();
 		var href = $(this).attr('href');
 		$.get(href, function(state, status) {
@@ -10,13 +10,13 @@ $('document').ready(function(){
 			$('#codeEdit').val(state.code);
 			$('#nameEdit').val(state.name);
 			$('#detailsEdit').val(state.details);
-			
+
 		});
-		
+
 		$('#editModal').modal();
 	});
-	
-	$('.table #detailsButton').on('click', function(event){
+
+	$('.table #detailsButton').on('click', function(event) {
 		event.preventDefault();
 		var href = $(this).attr('href');
 		$.get(href, function(state, status) {
@@ -25,19 +25,18 @@ $('document').ready(function(){
 			$('#nameDetails').val(state.name);
 			$('#detailsDetails').val(state.details);
 			$('#lastModifiedByDetails').val(state.lastModifiedBy);
-			$('#idDetails').val(state.details);
-			
-		});	
-	
+
+		});
+
 		$('#detailsModal').modal()
-		
+
 	});
-		
+
 	$('.table #deleteButton').on('click', function(event) {
 		event.preventDefault();
 		var href = $(this).attr('href');
 		$('#deleteModal #delRef').attr('href', href);
 		$('#deleteModal').modal();
 	});
-	
+
 });

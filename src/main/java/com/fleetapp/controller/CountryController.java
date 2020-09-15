@@ -26,6 +26,8 @@ public class CountryController {
 		List<Country> countryList = countryService.getCountries();
 		model.addAttribute("countries", countryList);
 		return "Country";
+		
+		
 	}
 
 	@PostMapping("/countries/addNew")
