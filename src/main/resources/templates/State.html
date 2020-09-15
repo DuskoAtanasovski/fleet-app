@@ -54,7 +54,7 @@
 			</div>
 
 			<!--logo start-->
-			<a href="index.html" class="logo">Nice <span class="lite">Admin</span></a>
+			<a th:href="@{/}" class="logo">Great <span class="lite">App</span></a>
 			<!--logo end-->
 
 			<div class="nav search-row" id="top_menu">
@@ -252,8 +252,8 @@
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
 				<ul class="sidebar-menu">
-					<li class="active"><a class="" th:href="@{/index}"> <i
-							class="icon_house_alt"></i> <span>Dashboard</span>
+					<li class="active"><a class="" th:href="@{/}"> <i
+							class="icon_house_alt"></i> <span>Home Page</span>
 					</a></li>
 					<li class="sub-menu"><a href="javascript:;" class=""> <i
 							class="icon_document_alt"></i> <span>Vehicles</span> <span
@@ -266,7 +266,7 @@
 							<li><a class="" th:href="@{/vehicleHires}">Hires</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;" class=""> <i
-							class="icon_desktop"></i> <span>Parameters</span> <span
+							class="icon_briefcase"></i> <span>Parameters</span> <span
 							class="menu-arrow arrow_carrot-right"></span>
 					</a>
 						<ul class="sub">
@@ -278,7 +278,7 @@
 									Values</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;" class=""> <i
-							class="icon_desktop"></i> <span>People</span> <span
+							class="icon_profile"></i> <span>People</span> <span
 							class="menu-arrow arrow_carrot-right"></span>
 					</a>
 						<ul class="sub">
@@ -299,17 +299,17 @@
 						</ul></li>
 
 					<li class="sub-menu"><a href="javascript:;" class=""> <i
-							class="icon_desktop"></i> <span>Accounts</span> <span
+							class="icon_currency_alt"></i> <span>Accounts</span> <span
 							class="menu-arrow arrow_carrot-right"></span>
 					</a>
 						<ul class="sub">
 							<li><a class="" th:href="@{/invoices}">Invoices</a></li>
-							<li><a class="" th:href="@{/invoiceStatuses}">Invoice
+							<li><a class="" th:href="@{/invoicestatuses}">Invoice
 									Status Values</a></li>
 						</ul></li>
 
 					<li class="sub-menu"><a href="javascript:;" class=""> <i
-							class="icon_documents_alt"></i> <span>Globals</span> <span
+							class="icon_globe_alt"></i> <span>Globals</span> <span
 							class="menu-arrow arrow_carrot-right"></span>
 					</a>
 						<ul class="sub">
@@ -336,7 +336,7 @@
 							<i class="fa fa fa-bars"></i> List of States
 						</h3>
 						<ol class="breadcrumb">
-							<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+							<li><i class="fa fa-home"></i><a href="/">Home</a></li>
 							<li><i class="fa fa-bars"></i>Pages</li>
 							<li><i class="fa fa-square-o"></i>Pages</li>
 						</ol>
