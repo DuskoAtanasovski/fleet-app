@@ -24,7 +24,7 @@ public class InvoiceStatusController {
 	@GetMapping("/invoiceStatuses")
 	public String getInvoiceStatus(Model model) {
 
-		List<InvoiceStatus> invoiceStatusList = invoiceStatusService.getInvoiceStatuss();
+		List<InvoiceStatus> invoiceStatusList = invoiceStatusService.getInvoiceStatuses();
 		model.addAttribute("invoiceStatuses", invoiceStatusList);
 
 		return "InvoiceStatus";

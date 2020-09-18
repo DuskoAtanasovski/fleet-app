@@ -16,7 +16,7 @@ public class InvoiceStatusService {
 	private InvoiceStatusRepository invoiceStatusRepository;
 
 	// List of invoiceStatuss
-	public List<InvoiceStatus> getInvoiceStatuss() {
+	public List<InvoiceStatus> getInvoiceStatuses() {
 		return invoiceStatusRepository.findAll();
 	}
 
