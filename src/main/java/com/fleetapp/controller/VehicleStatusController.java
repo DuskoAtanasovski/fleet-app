@@ -24,7 +24,7 @@ public class VehicleStatusController {
 	@GetMapping("/vehicleStatuses")
 	public String getVehicleStatus(Model model) {
 
-		List<VehicleStatus> vehicleStatusList = vehicleStatusService.getVehicleStatuss();
+		List<VehicleStatus> vehicleStatusList = vehicleStatusService.getVehicleStatuses();
 		model.addAttribute("vehicleStatuses", vehicleStatusList);
 
 		return "VehicleStatus";
