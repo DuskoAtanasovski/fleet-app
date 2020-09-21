@@ -368,9 +368,9 @@
 									</tr>
 									<tr th:each="employee:${employees}">
 										<td><a id="photoButton"
-											th:href="@{'/img/photos/' + ${employee.username} +'.jpg'}">
+											th:href="@{'/img/photos/' + ${employee.id} +'.jpg'}">
 												<img
-												th:src="@{'/img/photos/' + ${employee.username} +'.jpg'}"
+												th:src="@{'/img/photos/' + ${employee.id} +'.jpg'}"
 												width="40" height="40">
 										</a></td>
 										<td
