@@ -233,8 +233,7 @@
 							<li><a href="#"><i class="icon_clock_alt"></i> Timeline</a>
 							</li>
 							<li><a href="#"><i class="icon_chat_alt"></i> Chats</a></li>
-							<li><a href="login.html"><i class="icon_key_alt"></i>
-									Log Out</a></li>
+							<li><a href="login"><i class="icon_key_alt"></i> Log Out</a></li>
 							<li><a href="documentation.html"><i class="icon_key_alt"></i>
 									Documentation</a></li>
 							<li><a href="documentation.html"><i class="icon_key_alt"></i>
@@ -368,9 +367,9 @@
 									</tr>
 									<tr th:each="employee:${employees}">
 										<td><a id="photoButton"
-											th:href="@{'/img/photos/' + ${employee.id} +'.jpg'}">
+											th:href="@{'/img/photos/' + ${employee.username} +'.jpg'}">
 												<img
-												th:src="@{'/img/photos/' + ${employee.id} +'.jpg'}"
+												th:src="@{'/img/photos/' + ${employee.username} +'.jpg'}"
 												width="40" height="40">
 										</a></td>
 										<td
@@ -628,7 +627,7 @@
 												</select>
 											</div>
 										</div>
-											<div class="form-group row">
+										<div class="form-group row">
 											<label for="flpImageEdit" class="col-sm-4 col-form-label">Select
 												Image: </label>
 											<div class="col-sm-6">
@@ -888,10 +887,10 @@
 			</div>
 		</form>
 	</div>
-	
+
 	<div class="modal fade" id="detailsModal" tabindex="-1" role="dialog"
 		aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<form >
+		<form>
 			<div class="modal-dialog modal-lg" role="document" style="width: 70%">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -920,7 +919,8 @@
 											<label for="ddlTitleEdit" class="col-sm-4 col-form-label">Title:
 											</label>
 											<div class="col-sm-6">
-												<select class="form-control" id="ddlTitleDetails" name="title" readonly>
+												<select class="form-control" id="ddlTitleDetails"
+													name="title" readonly>
 													<option>-SELECT-</option>
 													<option value="Mr.">Mr.</option>
 													<option value="Ms.">Ms.</option>
@@ -931,8 +931,9 @@
 											<label for="txtInitialsEdit" class="col-sm-4 col-form-label">Initials:
 											</label>
 											<div class="col-sm-6">
-												<input type="text" class="form-control" id="txtInitialsDetails"
-													name="initials" placeholder="Initials" readonly>
+												<input type="text" class="form-control"
+													id="txtInitialsDetails" name="initials"
+													placeholder="Initials" readonly>
 											</div>
 										</div>
 										<div class="form-group row">
@@ -957,8 +958,9 @@
 											<label for="txtLastnameEdit" class="col-sm-4 col-form-label">Lastname:
 											</label>
 											<div class="col-sm-6">
-												<input type="text" class="form-control" id="txtLastnameDetails"
-													name="lastname" placeholder="Lastname" readonly>
+												<input type="text" class="form-control"
+													id="txtLastnameDetails" name="lastname"
+													placeholder="Lastname" readonly>
 											</div>
 										</div>
 										<div class="form-group row">
@@ -1017,8 +1019,9 @@
 											<label for="txtHireDateEdit" class="col-sm-4 col-form-label">Hire
 												Date:</label>
 											<div class="col-sm-6">
-												<input type="date" class="form-control" id="txtHireDateDetails"
-													name="hireDate" placeholder="Hire Date" readonly>
+												<input type="date" class="form-control"
+													id="txtHireDateDetails" name="hireDate"
+													placeholder="Hire Date" readonly>
 											</div>
 										</div>
 										<div class="form-group row">
@@ -1053,8 +1056,9 @@
 											<label for="txtMobileEdit" class="col-sm-4 col-form-label">Mobile:
 											</label>
 											<div class="col-sm-6">
-												<input type="text" class="form-control" id="txtMobileDetails"
-													name="mobile" placeholder="Mobile" readonly>
+												<input type="text" class="form-control"
+													id="txtMobileDetails" name="mobile" placeholder="Mobile"
+													readonly>
 											</div>
 										</div>
 										<div class="form-group row">
@@ -1072,8 +1076,9 @@
 										<div class="form-group row">
 											<label for="txtEmailEdit" class="col-sm-4 col-form-label">Email</label>
 											<div class="col-sm-6">
-												<input type="email" class="form-control" id="txtEmailDetails"
-													name="email" placeholder="Email" readonly>
+												<input type="email" class="form-control"
+													id="txtEmailDetails" name="email" placeholder="Email"
+													readonly>
 											</div>
 										</div>
 										<div class="form-group row">
@@ -1109,8 +1114,7 @@
 						</form>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary"
-							data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
