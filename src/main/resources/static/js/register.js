@@ -14,6 +14,6 @@ $('document').ready(function() {
 
 	}
 
-	password.onChange = validityPassword;
+	password.onChange = validatePassword;
 	confirmPassword.onkeyup = validatePassword;
 });
