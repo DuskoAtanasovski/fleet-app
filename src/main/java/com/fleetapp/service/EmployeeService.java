@@ -39,4 +39,8 @@ public class EmployeeService {
 	public List<Employee> findByKeyword(String keyword) {
 		return employeeRepository.findByKeyword(keyword);
 	}
+
+	public Employee findByUsername(String un) {
+		return employeeRepository.findByUsername(un);
+	}
 }
