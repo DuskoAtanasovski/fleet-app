@@ -6,6 +6,7 @@
 * 	[Spring Boot](https://spring.io/projects/spring-boot) - Framework to ease the bootstrapping and development of new Spring Applications.
 * 	[MySQL](https://www.mysql.com/) - Database
 * 	[git](https://git-scm.com/) - Free and Open-Source distributed version control system. 
+*  [Spring Security](https://spring.io/projects/spring-security) - Spring Security is a powerful and highly customizable authentication and access-control framework
 * 	[Lombok](https://projectlombok.org/) - Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much more.
 * [Thymeleaf](https://www.thymeleaf.org/) -  Modern server-side Java template engine for both web and standalone environments
 * 	[Bootstrap](https://getbootstrap.com/) - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. 
