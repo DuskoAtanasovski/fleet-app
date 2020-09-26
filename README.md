@@ -7,7 +7,7 @@
 * 	[MySQL](https://www.mysql.com/) - Database
 * 	[git](https://git-scm.com/) - Free and Open-Source distributed version control system. 
 * 	[Lombok](https://projectlombok.org/) - Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much more.
-* 	[React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+* [Thymeleaf](https://www.thymeleaf.org/)
 * 	[Bootstrap](https://getbootstrap.com/) - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. 
 ## External Tools Used
 
